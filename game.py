@@ -1,16 +1,27 @@
-#Achyuth Specifications pre release software
+#Achyuth Specifications Pre Release software
 
+#Setup
 import turtle
-
-# Set up the screen
+import random
+import time
 screen = turtle.Screen()
-screen.title("Move Box with Arrow Keys")
+screen.title("Achyuth Specifications Pre Release software")
 screen.bgcolor("white")
+colors = "'red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'brown', 'black', 'white', 'gray', 'cyan', 'magenta', 'lime', 'gold', 'silver', 'turquoise', 'skyblue', 'lightgreen', 'darkgreen', 'navy', 'maroon', 'violet', 'chocolate', 'beige', 'bisque', 'aquamarine', 'azure', 'cadetblue', 'chartreuse', 'coral', 'cornsilk', 'crimson', 'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgray', 'darkgreen', 'darkkhaki', 'darkmagenta', 'darkolivegreen', 'darkorange', 'darkorchid', 'darkred', 'darksalmon', 'darkseagreen', 'darkslateblue', 'darkslategray', 'darkturquoise', 'darkviolet', 'deeppink', 'deepskyblue', 'dimgray', 'dodgerblue', 'firebrick', 'floralwhite', 'forestgreen', 'fuchsia', 'gainsboro', 'ghostwhite', 'goldenrod', 'greenyellow', 'honeydew', 'hotpink', 'indianred', 'indigo', 'ivory', 'khaki', 'lavender', 'lavenderblush', 'lawngreen', 'lemonchiffon', 'lightblue', 'lightcoral', 'lightcyan', 'lightgoldenrodyellow', 'lightgray', 'lightgreen', 'lightpink', 'lightsalmon', 'lightseagreen', 'lightskyblue', 'lightslategray', 'lightsteelblue', 'lightyellow', 'limegreen', 'linen', 'mediumaquamarine', 'mediumblue', 'mediumorchid', 'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumspringgreen', 'mediumturquoise', 'mediumvioletred', 'midnightblue', 'mintcream', 'mistyrose', 'moccasin', 'navajowhite', 'oldlace', 'olivedrab', 'orangered', 'orchid', 'palegoldenrod', 'palegreen', 'paleturquoise', 'palevioletred', 'papayawhip', 'peachpuff', 'peru', 'plum', 'powderblue', 'rosybrown', 'royalblue', 'saddlebrown', 'salmon', 'sandybrown', 'seagreen', 'seashell', 'sienna', 'skyblue', 'slateblue', 'slategray', 'snow', 'springgreen', 'steelblue', 'tan', 'thistle', 'tomato', 'turquoise', 'violet', 'wheat', 'whitesmoke', 'yellowgreen'"
 
-# Create the black box
+
+
+
+#Loading Screen
+
+
+
+
+#Player setup
 box = turtle.Turtle()
 box.shape("square")
-box.color("black")
+#randomcolor= random.random
+#box.color(randomcolor)
 box.penup()  # Don't draw lines when moving
 box.speed(0)  # Fastest speed
 
@@ -30,5 +41,4 @@ screen.listen()
 screen.onkeypress(move_left, "Left")
 screen.onkeypress(move_right, "Right")
 
-# Keep the window open
 screen.mainloop()
